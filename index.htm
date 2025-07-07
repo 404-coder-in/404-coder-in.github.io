@@ -269,6 +269,71 @@
         width: 100px;
       }
     }
+
+    @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .logo {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .intro h1 {
+    font-size: 2em;
+  }
+
+  .intro p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .dropdown {
+    width: 90%;
+    margin-left: 0;
+    align-self: center !important;
+  }
+
+  .note-dropdown {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.9em;
+    z-index: 100;
+  }
+
+  .intro .math-img {
+    width: 120px;
+    height: auto;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.3;
+  }
+
+  .intro-btn {
+    width: 80%;
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
+
   </style>
 </head>
 <body>

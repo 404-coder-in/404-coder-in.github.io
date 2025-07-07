@@ -35,26 +35,24 @@
       }
     }
 
-    nav {
-      background: #1e1e2f;
+  nav {
+      background: #333333cf;
       padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white;
+      color: #005f73;
       position: sticky;
       top: 0;
       z-index: 999;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
       font-family: 'Orbitron', sans-serif;
     }
 
     nav .logo {
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: bold;
-      color: #00e6e6;
-      text-shadow: 1px 1px 4px #000;
-      letter-spacing: 1px;
+      color: #00d5ff;
     }
 
     nav ul {
@@ -64,15 +62,15 @@
     }
 
     nav ul li {
-      margin-left: 30px;
-      position: relative;
+      margin-left: 25px;
     }
 
     nav ul li a {
-      color: white;
+      color: #00d5ff;
       text-decoration: none;
       font-weight: 600;
-      transition: all 0.3s ease;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
     nav ul li a::after {
@@ -82,7 +80,7 @@
       left: 0;
       width: 0%;
       height: 2px;
-      background-color: #00e6e6;
+      background-color: #00b4d8;
       transition: width 0.4s;
     }
 
@@ -91,7 +89,7 @@
     }
 
     nav ul li a:hover {
-      color: #00e6e6;
+      color: #0cd5f4;
     }
 
     .container {

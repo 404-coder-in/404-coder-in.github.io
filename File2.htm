@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 11 Maths | Chapters</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      width: 100vw;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      min-height: 100vh;
+      position: relative;
+      opacity: 0;
+      animation: pageFadeSlide 1s ease forwards;
+      transform: translateY(40px);
+    }
+
+    @keyframes pageFadeSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body::before {
+      content: "Developers";
+      position: absolute;
+      top: 40%;
+      left: 8%;
+      font-size: 90px;
+      color: rgba(0, 119, 182, 0.06);
+      transform: rotate(-30deg);
+      z-index: 0;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    nav {
+      background: linear-gradient(to right, #c2f0ff, #d0f5ff);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #005f73;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    nav .logo {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #0077b6;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #00b4d8;
+      transition: width 0.4s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    nav ul li a:hover {
+      color: #00b4d8;
+    }
+
+    .dropdown-container {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 40px;
+      max-width: 600px;
+      margin: 70px auto;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0, 123, 255, 0.1);
+      z-index: 1;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-title {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .dropdown-button {
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: #fff;
+      padding: 15px 20px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      transition: 0.3s;
+      box-shadow: 0 8px 25px rgba(0, 183, 255, 0.3);
+      position: relative;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      outline: none;
+      scroll-margin: 0px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dropdown-button:focus {
+      outline: none;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate3d(0, -50%, 0) rotate(0deg);
+      transition: transform 0.3s ease;
+      font-size: 1.3em;
+      pointer-events: none;
+    }
+
+    .dropdown-button.open .arrow {
+      transform: translate3d(0, -50%, 0) rotate(180deg);
+    }
+
+    .dropdown-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      border-radius: 15px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      z-index: 99;
+      box-sizing: border-box;
+    }
+
+    .dropdown-list.active {
+      max-height: 800px;
+      opacity: 1;
+    }
+
+    .dropdown-item {
+      padding: 15px 20px;
+      text-align: left;
+      font-size: 1em;
+      color: #0077b6;
+      background: #f9fdff;
+      border-bottom: 1px solid #e2f2f8;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-item:hover {
+      background: #e0f7fa;
+      transform: translateX(5px);
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 768px) {
+      .dropdown-container {
+        margin: 40px 20px;
+        padding: 30px;
+      }
+
+      .dropdown-title {
+        font-size: 1.5em;
+      }
+
+      body::before {
+        font-size: 60px;
+        top: 45%;
+        left: 15%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">📘 Class 11 Maths</div>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="#">Formulas</a></li>
+      <li><a href="File3.htm">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="dropdown-container">
+    <div class="dropdown-title">📚 Select a Chapter to Explore</div>
+    <div class="custom-dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown(this)" id="dropdownBtn">
+        Choose Chapter
+        <span class="arrow">▼</span>
+      </button>
+      <div class="dropdown-list" id="dropdownList">
+        <div class="dropdown-item" onclick="redirectTo('FileL.htm')">All Chapters</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter1.html')">Chapter 1: Sets</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter2.html')">Chapter 2: Relations & Functions</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter3.html')">Chapter 3: Trigonometric Functions</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter4.html')">Chapter 4: Complex Numbers</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter5.html')">Chapter 5: Linear Inequalities</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter6.html')">Chapter 6: Permutations & Combinations</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter7.html')">Chapter 7: Binomial Theorem</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter8.html')">Chapter 8: Sequences & Series</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter9.html')">Chapter 9: Straight Lines</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter10.html')">Chapter 10: Conic Sections</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter11.html')">Chapter 11: 3D Geometry</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter12.html')">Chapter 12: Limits & Derivatives</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter13.html')">Chapter 13: Statistics</div>
+        <div class="dropdown-item" onclick="redirectTo('chapter14.html')">Chapter 14: Probability</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Prevent scroll-jump on click
+    document.getElementById('dropdownBtn').addEventListener('mousedown', e => {
+      e.preventDefault();
+    });
+
+    function toggleDropdown(btn) {
+      const list = document.getElementById('dropdownList');
+      list.classList.toggle('active');
+      btn.classList.toggle('open');
+    }
+
+    function redirectTo(page) {
+      document.getElementById('dropdownList').classList.remove('active');
+      document.querySelector('.dropdown-button').classList.remove('open');
+      setTimeout(() => {
+        window.location.href = page;
+      }, 100); // Smooth close before redirect
+    }
+  </script>
+
+</body>
+</html>

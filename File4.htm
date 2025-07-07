@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 11 Mathematics Formulas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #333;
+      opacity: 1;
+      animation: fadeIn 0.6s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    nav {
+      background: #1e1e2f;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    nav .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #00e6e6;
+      text-shadow: 1px 1px 4px #000;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #00e6e6;
+      transition: width 0.4s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    nav ul li a:hover {
+      color: #00e6e6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+h1 {
+  text-align: center;
+  font-size: 3.6em;
+  font-weight: 900;
+  color: #0078d7;
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+  position: relative;
+  animation: gentleGlow 4s ease-in-out infinite;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 136, 255, 0.15),
+    0 0 20px rgba(0, 136, 255, 0.1);
+}
+
+@keyframes gentleGlow {
+  0%, 100% {
+    text-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.1),
+      0 0 10px rgba(0, 136, 255, 0.15),
+      0 0 20px rgba(0, 136, 255, 0.1);
+  }
+  50% {
+    text-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.1),
+      0 0 18px rgba(0, 160, 255, 0.2),
+      0 0 30px rgba(0, 160, 255, 0.1);
+  }
+}
+
+    .formula-card {
+      background: linear-gradient(135deg, #ffffff 60%, #e0f7fa);
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      min-height: 600px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      border: 1px solid #cdeaff;
+    }
+
+    .formula-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .formula-card::before,
+    .formula-card::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      border-radius: 50%;
+      animation: float 3s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .formula-card::before {
+      top: -20px;
+      left: -20px;
+    }
+
+    .formula-card::after {
+      bottom: -20px;
+      right: -20px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.4);
+      }
+    }
+
+    .chapter-title {
+      font-size: 1.6em;
+      font-weight: 600;
+      color: #34495e;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapter-title::before {
+      content: attr(data-icon);
+      margin-right: 15px;
+      font-size: 1.4em;
+      color: #0072ff;
+    }
+
+    .formula-placeholder {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      margin: 50px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">📘 Class 11 Maths</div>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="File2.htm">Notes</a></li>
+      <li><a href="File3.htm">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>📘 Class 11 Mathematics Formulas</h1>
+
+    <!-- Formula Cards -->
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="📚">Chapter 1: Sets</div>
+      <div class="formula-placeholder">[Your formulas here]</div>
+    </div>
+    <div class="divider"></div>
+
+
+
+ <div class="formula-card">
+      <div class="chapter-title" data-icon="📚{}">Chapter 1: Sets</div>
+      <div class="formula-placeholder">Add formulas for Sets here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🔗">Chapter 2: Relations and Functions</div>
+      <div class="formula-placeholder">Add formulas for Relations and Functions here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🔺">Chapter 3: Trigonometric Functions</div>
+      <div class="formula-placeholder">Add formulas for Trigonometric Functions here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="∞">Chapter 4: Complex Numbers and Quadratic Equations</div>
+      <div class="formula-placeholder">Add formulas for Complex Numbers and Quadratic Equations here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="= ≠ < >">Chapter 5: Linear Inequalities</div>
+      <div class="formula-placeholder">Add formulas for Linear Inequalities here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🎲">Chapter 6: Permutations and Combinations</div>
+      <div class="formula-placeholder">Add formulas for Permutations and Combinations here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="📈">Chapter 7: Binomial Theorem</div>
+      <div class="formula-placeholder">Add formulas for Binomial Theorem here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🔢">Chapter 8: Sequences and Series</div>
+      <div class="formula-placeholder">Add formulas for Sequences and Series here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="📏">Chapter 9: Straight Lines</div>
+      <div class="formula-placeholder">Add formulas for Straight Lines here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="⚪">Chapter 10: Conic Sections</div>
+      <div class="formula-placeholder">Add formulas for Conic Sections here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="📐">Chapter 11: Introduction to 3D Geometry</div>
+      <div class="formula-placeholder">Add formulas for 3D Geometry here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🧮">Chapter 12: Limits and Derivatives</div>
+      <div class="formula-placeholder">Add formulas for Limits and Derivatives here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="📊">Chapter 13: Statistics</div>
+      <div class="formula-placeholder">Add formulas for Statistics here...</div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="formula-card">
+      <div class="chapter-title" data-icon="🎯">Chapter 14: Probability</div>
+      <div class="formula-placeholder">Add formulas for Probability here...</div>
+    </div>
+
+
+
+
+
+    <!-- Repeat for other chapters as needed -->
+
+  </div>
+
+</body>
+</html>

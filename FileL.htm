@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class 11 Maths Notes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      
+    }
+
+    body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+opacity: 0;
+  transform: translateY(60px);
+  animation: slideIn 1s ease-out forwards;
+  overflow-x: hidden;
+  margin-right: 0 !important;
+  position: relative;
+    
+    }
+
+  @keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+    width: 100vw;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    width: 100vw;
+  }
+}
+
+
+ nav {
+      background: #1e1e2f;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    nav .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #00e6e6;
+      text-shadow: 1px 1px 4px #000;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #00e6e6;
+      transition: width 0.4s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    nav ul li a:hover {
+      color: #00e6e6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+       text-shadow: 1px 2px 6px rgba(16, 16, 16, 0.445);
+      margin-bottom: 40px;
+      color: #0879ea;
+    }
+
+    .card {
+      background: #ffffff;
+      border-left: 6px solid #00c6ff;
+      border-radius: 12px;
+      padding: 25px 30px;
+      margin: 20px 0;
+      min-height: 250px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      font-size: 1.6em;
+      color: #34495e;
+    }
+
+    .card p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .read-more {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+    }
+
+    .read-more:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">📘 Class 11 Maths</div>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="File4.htm">Formulas</a></li>
+      <li><a href="File3.htm">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>📘 Class 11 Mathematics Notes</h1>
+
+    <div class="card">
+      <h2>1. Sets</h2>
+      <p>Understand the concept of sets, methods of representation, types like finite, infinite, empty, universal, and operations such as union, intersection, difference, and Venn diagrams for better visualization.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>2. Relations and Functions</h2>
+      <p>Learn about Cartesian product, relations between sets, and different types of functions including identity, constant, and modulus. Explore domain, range, and how to represent functions.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>3. Trigonometric Functions</h2>
+      <p>Study angles in radians and degrees, trigonometric ratios, identities, and their applications. Understand the graphs and periodicity of trigonometric functions.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>4. Complex Numbers and Quadratic Equations</h2>
+      <p>Explore complex numbers involving imaginary units, operations, modulus, conjugates, and quadratic equations with real and complex roots. Learn to solve them algebraically and graphically.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>5. Linear Inequalities</h2>
+      <p>Learn to solve linear inequalities in one and two variables using algebraic and graphical methods. Understand how these apply to constraints in real-world problems.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>6. Permutations and Combinations</h2>
+      <p>Master the fundamental principle of counting, understand permutations for arrangements and combinations for selections, and apply these concepts to solve complex problems.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>7. Binomial Theorem</h2>
+      <p>Learn to expand algebraic expressions using the binomial theorem, find specific terms in the expansion, and use Pascal’s Triangle to simplify computations.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>8. Sequences and Series</h2>
+      <p>Understand arithmetic progression (AP), geometric progression (GP), harmonic progression (HP), and how to calculate their terms, sums, and use them in real-life contexts.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>9. Straight Lines</h2>
+      <p>Explore slopes, different forms of equations of a line, angle between lines, and distance from a point to a line using coordinate geometry concepts.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>10. Conic Sections</h2>
+      <p>Discover the properties and standard equations of circles, parabolas, ellipses, and hyperbolas. Learn to represent them graphically and solve related problems.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>11. Introduction to 3D Geometry</h2>
+      <p>Learn how to represent points in three-dimensional space, calculate distances between points, and understand direction cosines and direction ratios.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>12. Limits and Derivatives</h2>
+      <p>Get introduced to calculus through the concept of limits and derivatives. Learn how functions change and how to compute instantaneous rates of change.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>13. Statistics</h2>
+      <p>Understand how to analyze data using measures of central tendency and dispersion such as mean, variance, and standard deviation. Apply these to real-world data.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+    <div class="card">
+      <h2>14. Probability</h2>
+      <p>Learn to compute probabilities using the axiomatic approach, understand sample spaces and events, and apply probability rules in practical situations.</p>
+      <a href="#" class="read-more">Read More →</a>
+    </div>
+
+  </div>
+</body>
+</html>

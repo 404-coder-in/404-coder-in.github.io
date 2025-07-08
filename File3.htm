@@ -8,10 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #00d4d4;
-      --bg-light: #f4f9fb;
-      --text-dark: #1e1e2f;
-      --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      --primary: #00b4d8;
+      --primary-dark: #0077b6;
+      --glass-bg: rgba(255, 255, 255, 0.25);
+      --blur: blur(12px);
+      --text-dark: #003344;
     }
 
     * {
@@ -26,7 +27,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: var(--bg-light);
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
       color: var(--text-dark);
       display: flex;
       flex-direction: column;
@@ -34,23 +35,30 @@
       align-items: center;
       line-height: 1.6;
       opacity: 0;
-      filter: blur(6px);
-      animation: blurFade 1.4s ease forwards;
+      transform: translateX(-50px);
+      animation: slideFadeLeft 1.2s ease forwards;
     }
 
-    @keyframes blurFade {
-      0% { opacity: 0; filter: blur(6px); }
-      70% { opacity: 0.6; filter: blur(2px); }
-      100% { opacity: 1; filter: blur(0); }
+    @keyframes slideFadeLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     .about-section {
       width: 95%;
       max-width: 1000px;
-      background: white;
+      background: var(--glass-bg);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
       border-radius: 16px;
-      box-shadow: var(--shadow);
-      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0, 183, 255, 0.12);
+      padding: 25px;
       margin-top: 10px;
       text-align: center;
       animation: fadeIn 1.2s ease-in-out;
@@ -65,11 +73,13 @@
       font-family: 'Orbitron', sans-serif;
       font-size: 2rem;
       margin-bottom: 12px;
+      color: #2f7ebf;
+      text-shadow: 0 6px 8px #8cb0b6a2, 0 0 20px #ccd6f39a;
     }
 
     .about-section p {
       font-size: 1rem;
-      color: #444;
+      color: #004f61;
       margin-bottom: 24px;
     }
 
@@ -81,10 +91,12 @@
     }
 
     .member {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border-radius: 12px;
       padding: 16px;
-      box-shadow: var(--shadow);
+      box-shadow: 0 6px 20px rgba(0, 183, 255, 0.12);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -93,7 +105,7 @@
 
     .member:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 28px rgba(0, 183, 255, 0.2);
     }
 
     .member img {
@@ -108,22 +120,23 @@
     .name {
       font-weight: 600;
       font-size: 1.05rem;
+      color: var(--primary-dark);
     }
 
     .role {
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
 
     .social-text {
-      background: #eef6f9;
+      background: #f0faff;
       padding: 16px;
       border-radius: 12px;
       max-width: 300px;
       margin: 0 auto;
       font-size: 0.95rem;
       line-height: 1.7;
-      box-shadow: var(--shadow);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
     .social-text span {
@@ -131,6 +144,16 @@
       margin: 4px 0;
       font-weight: 500;
     }
+   
+    .social-text a{
+      color:#0e7fba;
+      font-weight: bolder;
+    }
+
+      .social-text a:hover{
+     cursor: pointer;
+        color:#04669b
+      }
 
     footer {
       margin: 20px 0 10px;
@@ -139,99 +162,88 @@
       text-align: center;
     }
 
-    @media (max-width: 500px) {
+    .back-home {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      background-color: transparent;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .back-home:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      transform: scale(1.08);
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 15px 10px;
+      }
+
       .about-section h2 {
         font-size: 1.6rem;
       }
+
       .about-section p {
         font-size: 0.95rem;
       }
+
+      .team {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .member {
+        padding: 12px;
+      }
+
+      .member img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .name {
+        font-size: 1rem;
+      }
+
+      .role {
+        font-size: 0.85rem;
+      }
+
+      .social-text {
+        font-size: 0.88rem;
+        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        background: #f7fbfd;
+      }
+
+      .back-home {
+        font-size: 20px;
+        top: 15px;
+        left: 15px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+        margin-top: 20px;
+        padding: 8px;
+      }
     }
-
-
-.back-home {
-  display: inline-block;
-  margin: 25px auto;
-  padding: 12px 25px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  background: linear-gradient(135deg, #00d4d4, #0e89ff);
-  border: none;
-  border-radius: 40px;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 212, 212, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-}
-
-.back-home:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0, 212, 212, 0.45);
-  background: linear-gradient(135deg, #0e89ff, #00d4d4);
-}
-
-
-@media (max-width: 768px) {
-  .about-section {
-    padding: 15px 10px;
-  }
-
-  .about-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .about-section p {
-    font-size: 0.95rem;
-  }
-
-  .team {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .member {
-    padding: 12px;
-  }
-
-  .member img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .name {
-    font-size: 1rem;
-  }
-
-  .role {
-    font-size: 0.85rem;
-  }
-
-  .social-text {
-    font-size: 0.88rem;
-    padding: 12px;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background: #f7fbfd;
-  }
-
-  .back-home {
-    font-size: 0.95rem;
-    padding: 10px 20px;
-    width: 80%;
-    display: block;
-    text-align: center;
-  }
-
-  footer {
-    font-size: 0.85rem;
-    margin-top: 20px;
-    padding: 8px;
-  }
-}
-
-
   </style>
 </head>
 <body>
@@ -258,14 +270,14 @@
 
     <div class="social-text">
       <p><strong>Connect with us:</strong></p>
-      <span>Facebook: <a href="#">facebook.com/ourteam</a></span>
+      <span>Telegram: <a href="https://t.me/deve_lopers">telegam.com/developers</a></span>
       <span>WhatsApp: +91-99999-99999</span>
       <span>X (Twitter): <a href="#">twitter.com/ourteam</a></span>
-      <span>Email: <a href="mailto:team@class11maths.in">team@class11maths.in</a></span>
+      <span>Email: <a href="mailto:harshitthecodingwhiz@gmail.com">team@developer/member.in</a></span>
     </div>
   </section>
 
-<a href="index.htm" class="back-home">← Back to Home</a>
+  <a href="index.htm" class="back-home">✕</a>
 
   <footer>
     © 2025 Developers — Designed with ❤️ for Smart Learning

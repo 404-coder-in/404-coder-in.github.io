@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Class 11 Maths | Chapters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -170,7 +171,7 @@
     }
 
     .dropdown-list {
-      position: absolute;
+      position: relative;
       top: 100%;
       left: 0;
       width: 100%;
@@ -278,7 +279,55 @@
   }
 }
 
-    
+.faqs {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(0, 119, 182, 0.1);
+  color: #005f73;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 260px;
+}
+
+.faqs h1.faqs1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.9em;
+  color: #002e46;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #00b4d8;
+  padding-bottom: 12px;
+}
+
+.faq-box {
+  background: #e0f7fa;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 183, 255, 0.15);
+  margin-bottom: 25px;
+  padding: 20px 25px;
+  transition: transform 0.3s ease;
+}
+
+.faq-box:hover {
+  transform: translateY(-4px);
+}
+
+.faq-question {
+  font-weight: 700;
+  color: #0077b6;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.faq-answer {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #023e58;
+}
   </style>
 </head>
 <body>
@@ -287,7 +336,7 @@
     <div class="logo">📘 Class 11 Maths</div>
     <ul>
       <li><a href="index.htm">Home</a></li>
-      <li><a href="#">Formulas</a></li>
+      <li><a href="File4.htm">Formulas</a></li>
       <li><a href="File3.htm">About</a></li>
     </ul>
   </nav>
@@ -319,6 +368,28 @@
     </div>
   </div>
 
+<div class="faqs">
+  <h1 class="faqs1">Frequently Asked Questions on CBSE Class 11 Maths Revision Notes</h1>
+
+  <div class="faq-box">
+    <div class="faq-question">Q1. Can I score well in Class 11 Maths using the CBSE Notes?</div>
+    <div class="faq-answer">Yes, the CBSE Notes for Class 11 Maths are designed using multiple reference books togther with internet, which provides good knowledge of basic concepts. The answers to textbook questions are designed in such a way as to enhance fundamentals among students.</div>
+  </div>
+
+  <div class="faq-box">
+    <div class="faq-question">Q2. Can I rely on the CBSE Class 11 Maths Notes for exam preparation?</div>
+    <div class="faq-answer">Students can rely on the CBSE Class 11 Maths Notes as it is explained in a simple-to-understand language. The concepts are discussed in an interactive manner to make learning fun for students.</div>
+  </div>
+
+  <div class="faq-box">
+    <div class="faq-question">Q3. How to answer complex questions using the CBSE Class 11 Maths Notes?</div>
+    <div class="faq-answer">The CBSE Class 11 Maths Notes is curated to provide students with a good knowledge of important topics. It increases the problem-solving skills among students, which is vital from the exam point of view.</div>
+  </div>
+</div>
+
+
+
+
   <script>
     // Prevent scroll-jump on click
     document.getElementById('dropdownBtn').addEventListener('mousedown', e => {
@@ -349,6 +420,15 @@ document.addEventListener('click', function(e) {
     btn.classList.remove('open');
   }
 });
+
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const faqItem = item.parentElement;
+      faqItem.classList.toggle('open');
+    });
+  });
+
+
 
     
   </script>

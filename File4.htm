@@ -98,18 +98,11 @@
       padding: 0 20px;
     }
 h1 {
-  text-align: center;
-  font-size: 3.6em;
-  font-weight: 900;
-  color: #0078d7;
-  margin-bottom: 40px;
-  letter-spacing: 1.2px;
-  position: relative;
-  animation: gentleGlow 4s ease-in-out infinite;
-  text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.1),
-    0 0 10px rgba(0, 136, 255, 0.15),
-    0 0 20px rgba(0, 136, 255, 0.1);
+   font-size: 3.6em;
+   text-align: center;
+      margin-bottom: 40px;
+      color: #136db6;
+      text-shadow: 0 6px 8px #8cb0b6a2, 0 0 20px #ccd6f39a;
 }
 
 @keyframes gentleGlow {
@@ -269,87 +262,622 @@ h1 {
 
     <!-- Formula Cards -->
     <div class="formula-card">
-      <div class="chapter-title" data-icon="📚">Chapter 1: Sets</div>
-      <div class="formula-placeholder">[Your formulas here]</div>
-    </div>
+  <div class="chapter-title" data-icon="📚">Chapter 1: Sets</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Set Representation</h3>
+    <p style="color:#333;">
+      ▸ Roster form: A = {1, 2, 3}<br>
+      ▸ Set-builder form: A = {x: x ∈ ℕ, x &lt; 4}
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Types of Sets</h3>
+    <p style="color:#333;">
+      ▸ Empty, Finite, Infinite, Equal, Subset, Power Set, Universal Set
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Venn Diagrams</h3>
+    <p style="color:#333;">
+      ▸ Pictorial representation of sets
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Operations on Sets</h3>
+    <p style="color:#333;">
+      ▸ Union: A ∪ B = {x: x ∈ A or x ∈ B}<br>
+      ▸ Intersection: A ∩ B = {x: x ∈ A and x ∈ B}<br>
+      ▸ Difference: A – B = {x: x ∈ A and x ∉ B}<br>
+      ▸ Complement: A′ = {x: x ∉ A}
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Important Properties</h3>
+    <p style="color:#333;">
+      ▸ n(A ∪ B) = n(A) + n(B) – n(A ∩ B)<br>
+      ▸ De Morgan’s Laws:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(A ∪ B)′ = A′ ∩ B′<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;(A ∩ B)′ = A′ ∪ B′
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="🔗">Chapter 2: Relations and Functions</div>
-      <div class="formula-placeholder">Add formulas for Relations and Functions here...</div>
-    </div>
+  <div class="chapter-title" data-icon="🔗">Chapter 2: Relations and Functions</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Cartesian Product</h3>
+    <p style="color:#333;">
+      ▸ A × B = {(a, b): a ∈ A, b ∈ B}<br>
+      ▸ If A has m elements, B has n → A × B has mn elements
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Relation</h3>
+    <p style="color:#333;">
+      ▸ A relation from A to B is a subset of A × B<br>
+      ▸ Types: Empty, Universal, Identity
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Function</h3>
+    <p style="color:#333;">
+      ▸ A relation is a function if every element of A has a unique image in B<br>
+      ▸ Domain: Set of all inputs<br>
+      ▸ Co-domain: Set where outputs lie<br>
+      ▸ Range: Actual outputs from domain
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Types of Functions</h3>
+    <p style="color:#333;">
+      ▸ One-one (Injective), Onto (Surjective), Bijective<br>
+      ▸ Constant, Identity, Polynomial, Rational, Modulus
+    </p>
+
+  </div>
+</div>
+
+    <div class="divider"></div>
+
+   <div class="formula-card">
+  <div class="chapter-title" data-icon="🔺">Chapter 3: Trigonometric Functions</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Basic Trigonometric Ratios</h3>
+    <p style="color:#333;">
+      ▸ sin θ = Perpendicular / Hypotenuse<br>
+      ▸ cos θ = Base / Hypotenuse<br>
+      ▸ tan θ = Perpendicular / Base = sin θ / cos θ<br>
+      ▸ cot θ = 1 / tan θ = cos θ / sin θ<br>
+      ▸ sec θ = 1 / cos θ<br>
+      ▸ cosec θ = 1 / sin θ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Fundamental Identities</h3>
+    <p style="color:#333;">
+      ▸ sin²θ + cos²θ = 1<br>
+      ▸ 1 + tan²θ = sec²θ<br>
+      ▸ 1 + cot²θ = cosec²θ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Trigonometric Values (0° to 90°)</h3>
+    <p style="color:#333;">
+      ▸ sin 0° = 0, sin 30° = 1/2, sin 45° = 1/√2, sin 60° = √3/2, sin 90° = 1<br>
+      ▸ cos 0° = 1, cos 30° = √3/2, cos 45° = 1/√2, cos 60° = 1/2, cos 90° = 0<br>
+      ▸ tan 0° = 0, tan 30° = 1/√3, tan 45° = 1, tan 60° = √3, tan 90° = ∞
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Allied Angle Identities</h3>
+    <p style="color:#333;">
+      ▸ sin(180° – θ) = sin θ<br>
+      ▸ cos(180° – θ) = –cos θ<br>
+      ▸ tan(180° – θ) = –tan θ<br>
+      ▸ sin(90° ± θ) = cos θ<br>
+      ▸ cos(90° ± θ) = sin θ<br>
+      ▸ tan(90° ± θ) = ±cot θ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Angle Conversion (Degrees ↔ Radians)</h3>
+    <p style="color:#333;">
+      ▸ 180° = π radians<br>
+      ▸ 1 radian = 180° / π<br>
+      ▸ 1° = π / 180 radians
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">6. Periodicity and Signs (ASTC Rule)</h3>
+    <p style="color:#333;">
+      ▸ sin(θ + 2π) = sin θ<br>
+      ▸ cos(θ + 2π) = cos θ<br>
+      ▸ tan(θ + π) = tan θ<br>
+      ▸ cot(θ + π) = cot θ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">7. Negative Angle Identities</h3>
+    <p style="color:#333;">
+      ▸ sin(–θ) = –sin θ<br>
+      ▸ cos(–θ) = cos θ<br>
+      ▸ tan(–θ) = –tan θ<br>
+      ▸ cosec(–θ) = –cosec θ<br>
+      ▸ sec(–θ) = sec θ<br>
+      ▸ cot(–θ) = –cot θ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">8. Sum and Difference Formulas</h3>
+    <p style="color:#333;">
+      ▸ sin(A ± B) = sin A cos B ± cos A sin B<br>
+      ▸ cos(A ± B) = cos A cos B ∓ sin A sin B<br>
+      ▸ tan(A ± B) = (tan A ± tan B) / (1 ∓ tan A tan B)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">9. Double Angle Formulas</h3>
+    <p style="color:#333;">
+      ▸ sin 2A = 2 sin A cos A<br>
+      ▸ cos 2A = cos²A – sin²A = 2cos²A – 1 = 1 – 2sin²A<br>
+      ▸ tan 2A = (2 tan A) / (1 – tan²A)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">10. Product to Sum Formulas</h3>
+    <p style="color:#333;">
+      ▸ sin A sin B = ½[cos(A–B) – cos(A+B)]<br>
+      ▸ cos A cos B = ½[cos(A–B) + cos(A+B)]<br>
+      ▸ sin A cos B = ½[sin(A+B) + sin(A–B)]
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">11. Sum to Product Formulas</h3>
+    <p style="color:#333;">
+      ▸ sin A + sin B = 2 sin[(A+B)/2] cos[(A–B)/2]<br>
+      ▸ sin A – sin B = 2 cos[(A+B)/2] sin[(A–B)/2]<br>
+      ▸ cos A + cos B = 2 cos[(A+B)/2] cos[(A–B)/2]<br>
+      ▸ cos A – cos B = –2 sin[(A+B)/2] sin[(A–B)/2]
+    </p>
+
+  </div>
+</div>
+
+
+    <div class="divider"></div>
+
+   <div class="formula-card">
+  <div class="chapter-title" data-icon="∞">Chapter 4: Complex Numbers and Quadratic Equations</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Definition of Complex Numbers</h3>
+    <p style="color:#333;">
+      ▸ A complex number is of the form z = x + iy, where x, y ∈ ℝ and i = √–1<br>
+      ▸ x is called the real part: Re(z) = x<br>
+      ▸ y is called the imaginary part: Im(z) = y
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Algebra of Complex Numbers</h3>
+    <p style="color:#333;">
+      ▸ (a + ib) + (c + id) = (a + c) + i(b + d)<br>
+      ▸ (a + ib)(c + id) = (ac – bd) + i(ad + bc)<br>
+      ▸ (a + ib) / (c + id) = [(ac + bd) + i(bc – ad)] / (c² + d²)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Modulus and Conjugate</h3>
+    <p style="color:#333;">
+      ▸ Modulus of z = x + iy is |z| = √(x² + y²)<br>
+      ▸ Conjugate of z = x + iy is z̅ = x – iy<br>
+      ▸ z × z̅ = |z|² = x² + y²
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Argand Plane Representation</h3>
+    <p style="color:#333;">
+      ▸ Complex number z = x + iy is represented as point (x, y) on Argand Plane<br>
+      ▸ Distance from origin = |z| = √(x² + y²)<br>
+      ▸ Argument of z: arg(z) = tan⁻¹(y/x)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Quadratic Equations</h3>
+    <p style="color:#333;">
+      ▸ Standard form: ax² + bx + c = 0<br>
+      ▸ Discriminant: D = b² – 4ac<br>
+      ▸ Nature of roots:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;▸ D > 0 → Real and distinct<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;▸ D = 0 → Real and equal<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;▸ D < 0 → Complex and conjugate pair<br>
+      ▸ Roots formula: x = [–b ± √D] / (2a)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">6. Properties of Roots</h3>
+    <p style="color:#333;">
+      ▸ Sum of roots = –b/a<br>
+      ▸ Product of roots = c/a<br>
+      ▸ If α and β are roots: then equation is a(x – α)(x – β) = 0
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">7. Nature of Roots with Complex Numbers</h3>
+    <p style="color:#333;">
+      ▸ If D &lt 0, roots are complex and conjugate: α = p + iq, β = p – iq<br>
+      ▸ Graph of such quadratic never touches x-axis
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">8. Important Identities</h3>
+    <p style="color:#333;">
+      ▸ i² = –1<br>
+      ▸ i³ = –i<br>
+      ▸ i⁴ = 1<br>
+      ▸ iⁿ = i^(n mod 4)
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="🔺">Chapter 3: Trigonometric Functions</div>
-      <div class="formula-placeholder">Add formulas for Trigonometric Functions here...</div>
-    </div>
+  <div class="chapter-title" data-icon="= ≠ < >">Chapter 5: Linear Inequalities</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Linear Inequality Definition</h3>
+    <p style="color:#333;">
+      ▸ An expression of the form ax + b < c or ax + b > c, where a, b, c ∈ ℝ and a ≠ 0<br>
+      ▸ Solution set: values of variable satisfying the inequality
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Rules for Solving Inequalities</h3>
+    <p style="color:#333;">
+      ▸ Same number can be added/subtracted on both sides<br>
+      ▸ Can multiply/divide both sides by same positive number<br>
+      ▸ If multiplied/divided by negative number, inequality sign reverses
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Graphical Representation</h3>
+    <p style="color:#333;">
+      ▸ Represented on number line<br>
+      ▸ Open circle ⭕ for &lt; or &gt;<br>
+      ▸ Filled circle ⚫ for ≤ or ≥
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Linear Inequalities in Two Variables</h3>
+    <p style="color:#333;">
+      ▸ General form: ax + by ≤ c, ax + by ≥ c<br>
+      ▸ Solution: Region in coordinate plane satisfying inequality<br>
+      ▸ Boundary line: ax + by = c (dashed or solid)<br>
+      ▸ Use test point (e.g., (0,0)) to decide solution region
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. System of Inequalities</h3>
+    <p style="color:#333;">
+      ▸ Solving multiple inequalities together<br>
+      ▸ Graphical solution: shaded region common to all inequalities<br>
+      ▸ Feasible region: all points satisfying all conditions
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="∞">Chapter 4: Complex Numbers and Quadratic Equations</div>
-      <div class="formula-placeholder">Add formulas for Complex Numbers and Quadratic Equations here...</div>
-    </div>
+  <div class="chapter-title" data-icon="🎲">Chapter 6: Permutations and Combinations</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Fundamental Principle of Counting</h3>
+    <p style="color:#333;">
+      ▸ If an event can occur in m ways and another event in n ways, then both can occur in m × n ways
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Factorial</h3>
+    <p style="color:#333;">
+      ▸ n! = n × (n–1) × (n–2) × ... × 1<br>
+      ▸ 0! = 1 (By definition)<br>
+      ▸ n! = n × (n–1)!
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Permutations</h3>
+    <p style="color:#333;">
+      ▸ Number of permutations of n different things taken r at a time:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;P(n, r) = nPr = n! / (n – r)!<br>
+      ▸ If all n things are different and taken all at a time: n!<br>
+      ▸ Permutations of n things with p identical of one kind, q of another:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;= n! / (p! × q! × ...)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Circular Permutations</h3>
+    <p style="color:#333;">
+      ▸ For n distinct objects in a circle: (n – 1)!<br>
+      ▸ If clockwise and anticlockwise arrangements are same: (n – 1)! / 2
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Combinations</h3>
+    <p style="color:#333;">
+      ▸ Number of combinations of n different things taken r at a time:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;C(n, r) = nCr = n! / [r! × (n – r)!]<br>
+      ▸ nCr = nC(n – r)<br>
+      ▸ nCr + nC(r – 1) = n+1Cr
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">6. Relation Between Permutation and Combination</h3>
+    <p style="color:#333;">
+      ▸ nPr = nCr × r!
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="= ≠ < >">Chapter 5: Linear Inequalities</div>
-      <div class="formula-placeholder">Add formulas for Linear Inequalities here...</div>
-    </div>
+  <div class="chapter-title" data-icon="📈">Chapter 7: Binomial Theorem</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Binomial Expansion</h3>
+    <p style="color:#333;">
+      ▸ (x + a)ⁿ = Σ [nCr × xⁿ⁻ʳ × aʳ], r = 0 to n<br>
+      ▸ Total number of terms = n + 1
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. General Term</h3>
+    <p style="color:#333;">
+      ▸ T<sub>r+1</sub> = nCr × xⁿ⁻ʳ × aʳ
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Middle Terms</h3>
+    <p style="color:#333;">
+      ▸ If n is even, there are 2 middle terms: T<sub>n/2 + 1</sub> and T<sub>n/2</sub><br>
+      ▸ If n is odd, the middle term is T<sub>(n+1)/2</sub>
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Properties of Binomial Coefficients</h3>
+    <p style="color:#333;">
+      ▸ nCr = nC(n – r)<br>
+      ▸ nCr + nC(r – 1) = (n + 1)Cr
+    </p>
+
+  </div>
+</div>
+
+    <div class="divider"></div>
+
+   <div class="formula-card">
+  <div class="chapter-title" data-icon="🔢">Chapter 8: Sequences and Series</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Arithmetic Progression (A.P.)</h3>
+    <p style="color:#333;">
+      ▸ General term: a<sub>n</sub> = a + (n – 1)d<br>
+      ▸ Sum of first n terms: S<sub>n</sub> = n/2 × [2a + (n – 1)d]<br>
+      ▸ Also: S<sub>n</sub> = n/2 × (first term + last term)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Geometric Progression (G.P.)</h3>
+    <p style="color:#333;">
+      ▸ General term: a<sub>n</sub> = arⁿ⁻¹<br>
+      ▸ Sum of first n terms (r ≠ 1): S<sub>n</sub> = a × (rⁿ – 1) / (r – 1)<br>
+      ▸ If r &lt; 1: S<sub>n</sub> = a × (1 – rⁿ) / (1 – r)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Sum to Infinity of G.P. (|r| &lt; 1)</h3>
+    <p style="color:#333;">
+      ▸ S = a / (1 – r)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Arithmetic Mean (A.M.)</h3>
+    <p style="color:#333;">
+      ▸ A.M. between a and b: (a + b)/2
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Geometric Mean (G.M.)</h3>
+    <p style="color:#333;">
+      ▸ G.M. between a and b: √(ab)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">6. Special Series</h3>
+    <p style="color:#333;">
+      ▸ Σn = n(n + 1)/2<br>
+      ▸ Σn² = n(n + 1)(2n + 1)/6<br>
+      ▸ Σn³ = [n(n + 1)/2]²
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="🎲">Chapter 6: Permutations and Combinations</div>
-      <div class="formula-placeholder">Add formulas for Permutations and Combinations here...</div>
-    </div>
+  <div class="chapter-title" data-icon="📏">Chapter 9: Straight Lines</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. General Form</h3>
+    <p style="color:#333;">
+      ▸ ax + by + c = 0, where a, b, c ∈ ℝ and a, b not both 0
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Slope of a Line</h3>
+    <p style="color:#333;">
+      ▸ If line is y = mx + c, then slope = m<br>
+      ▸ Slope between two points (x₁, y₁) and (x₂, y₂): m = (y₂ – y₁) / (x₂ – x₁)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Various Forms of Line</h3>
+    <p style="color:#333;">
+      ▸ Slope-intercept form: y = mx + c<br>
+      ▸ Point-slope form: y – y₁ = m(x – x₁)<br>
+      ▸ Two-point form: (y – y₁)/(x – x₁) = (y₂ – y₁)/(x₂ – x₁)<br>
+      ▸ Intercept form: x/a + y/b = 1<br>
+      ▸ Normal form: xcosα + ysinα = p
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Angle Between Two Lines</h3>
+    <p style="color:#333;">
+      ▸ tanθ = |(m₁ – m₂)/(1 + m₁m₂)|
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Distance from a Point to a Line</h3>
+    <p style="color:#333;">
+      ▸ D = |ax + by + c| / √(a² + b²)
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="📈">Chapter 7: Binomial Theorem</div>
-      <div class="formula-placeholder">Add formulas for Binomial Theorem here...</div>
-    </div>
+  <div class="chapter-title" data-icon="⚪">Chapter 10: Conic Sections</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Circle</h3>
+    <p style="color:#333;">
+      ▸ Standard form: (x – h)² + (y – k)² = r²<br>
+      ▸ Centre: (h, k), Radius: r
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Parabola</h3>
+    <p style="color:#333;">
+      ▸ Standard: y² = 4ax (opens right), vertex at origin<br>
+      ▸ Focus: (a, 0), Directrix: x = –a, Axis: x-axis<br>
+      ▸ Length of latus rectum: 4a
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Ellipse</h3>
+    <p style="color:#333;">
+      ▸ (x²/a²) + (y²/b²) = 1, a > b<br>
+      ▸ Foci: (±ae, 0), where e = √(1 – b²/a²)<br>
+      ▸ Latus rectum: 2b²/a
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Hyperbola</h3>
+    <p style="color:#333;">
+      ▸ (x²/a²) – (y²/b²) = 1<br>
+      ▸ Foci: (±ae, 0), where e = √(1 + b²/a²)<br>
+      ▸ Latus rectum: 2b²/a
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="🔢">Chapter 8: Sequences and Series</div>
-      <div class="formula-placeholder">Add formulas for Sequences and Series here...</div>
-    </div>
+  <div class="chapter-title" data-icon="📐">Chapter 11: Introduction to 3D Geometry</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Coordinates of a Point</h3>
+    <p style="color:#333;">
+      ▸ A point P in space is represented by (x, y, z)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Distance Formula</h3>
+    <p style="color:#333;">
+      ▸ Distance between P(x₁, y₁, z₁) and Q(x₂, y₂, z₂):<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;= √[(x₂ – x₁)² + (y₂ – y₁)² + (z₂ – z₁)²]
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Section Formula</h3>
+    <p style="color:#333;">
+      ▸ If point R divides PQ in ratio m:n, then:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;R = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n), (mz₂ + nz₁)/(m+n))
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Origin & Axes</h3>
+    <p style="color:#333;">
+      ▸ X-axis: (x, 0, 0), Y-axis: (0, y, 0), Z-axis: (0, 0, z)<br>
+      ▸ Origin: (0, 0, 0)
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="📏">Chapter 9: Straight Lines</div>
-      <div class="formula-placeholder">Add formulas for Straight Lines here...</div>
-    </div>
+  <div class="chapter-title" data-icon="🧮">Chapter 12: Limits and Derivatives</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Limit of a Function</h3>
+    <p style="color:#333;">
+      ▸ lim<sub>x→a</sub> f(x) = L means as x approaches a, f(x) → L<br>
+      ▸ lim<sub>x→0</sub> sinx/x = 1<br>
+      ▸ lim<sub>x→0</sub> (1 – cosx)/x² = 1/2
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Derivative Definition</h3>
+    <p style="color:#333;">
+      ▸ Derivative of f(x): f'(x) = lim<sub>h→0</sub> [f(x+h) – f(x)] / h
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Derivatives of Standard Functions</h3>
+    <p style="color:#333;">
+      ▸ d/dx (xⁿ) = nxⁿ⁻¹<br>
+      ▸ d/dx (sinx) = cosx<br>
+      ▸ d/dx (cosx) = –sinx<br>
+      ▸ d/dx (eˣ) = eˣ<br>
+      ▸ d/dx (logx) = 1/x
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">4. Sum and Difference Rule</h3>
+    <p style="color:#333;">
+      ▸ d/dx [f(x) ± g(x)] = f'(x) ± g'(x)
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">5. Product and Quotient Rule</h3>
+    <p style="color:#333;">
+      ▸ Product: d/dx [f(x)·g(x)] = f(x)g'(x) + g(x)f'(x)<br>
+      ▸ Quotient: d/dx [f(x)/g(x)] = [g(x)f'(x) – f(x)g'(x)] / g(x)²
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="⚪">Chapter 10: Conic Sections</div>
-      <div class="formula-placeholder">Add formulas for Conic Sections here...</div>
-    </div>
+  <div class="chapter-title" data-icon="📊">Chapter 13: Statistics</div>
+  <div class="formula-placeholder">
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Mean (Grouped Data)</h3>
+    <p style="color:#333;">
+      ▸ Mean (𝑥̄) = Σf<sub>i</sub>x<sub>i</sub> / Σf<sub>i</sub><br>
+      ▸ f<sub>i</sub>: frequency, x<sub>i</sub>: class mark
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Median</h3>
+    <p style="color:#333;">
+      ▸ Median = l + [(n/2 – F)/f] × h<br>
+      ▸ l = lower boundary of median class<br>
+      ▸ n = total frequency, F = cumulative frequency before median class<br>
+      ▸ f = frequency of median class, h = class width
+    </p>
+
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Mode</h3>
+    <p style="color:#333;">
+      ▸ Mode = l + [(f₁ – f₀) / (2f₁ – f₀ – f₂)] × h<br>
+      ▸ l = lower limit of modal class<br>
+      ▸ f₁ = frequency of modal class<br>
+      ▸ f₀ = frequency before modal class<br>
+      ▸ f₂ = frequency after modal class
+    </p>
+
+  </div>
+</div>
+
     <div class="divider"></div>
 
     <div class="formula-card">
-      <div class="chapter-title" data-icon="📐">Chapter 11: Introduction to 3D Geometry</div>
-      <div class="formula-placeholder">Add formulas for 3D Geometry here...</div>
-    </div>
-    <div class="divider"></div>
+  <div class="chapter-title" data-icon="🎯">Chapter 14: Probability</div>
+  <div class="formula-placeholder">
 
-    <div class="formula-card">
-      <div class="chapter-title" data-icon="🧮">Chapter 12: Limits and Derivatives</div>
-      <div class="formula-placeholder">Add formulas for Limits and Derivatives here...</div>
-    </div>
-    <div class="divider"></div>
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-bottom: 10px; text-decoration: underline;">1. Probability of an Event</h3>
+    <p style="color:#333;">
+      ▸ P(E) = Number of favourable outcomes / Total number of outcomes<br>
+      ▸ 0 ≤ P(E) ≤ 1
+    </p>
 
-    <div class="formula-card">
-      <div class="chapter-title" data-icon="📊">Chapter 13: Statistics</div>
-      <div class="formula-placeholder">Add formulas for Statistics here...</div>
-    </div>
-    <div class="divider"></div>
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">2. Complement of an Event</h3>
+    <p style="color:#333;">
+      ▸ P(E') = 1 – P(E)
+    </p>
 
-    <div class="formula-card">
-      <div class="chapter-title" data-icon="🎯">Chapter 14: Probability</div>
-      <div class="formula-placeholder">Add formulas for Probability here...</div>
-    </div>
+    <h3 style="color:#2a4f72; font-size: 1.4em; font-weight: 700; margin-top:25px; margin-bottom: 10px; text-decoration: underline;">3. Impossible and Sure Events</h3>
+    <p style="color:#333;">
+      ▸ P(∅) = 0 (Impossible Event)<br>
+      ▸ P(Sample Space) = 1 (Sure Event)
+    </p>
+
+  </div>
+</div>
+
 
 
 
